@@ -11,7 +11,7 @@ choices = ["R", "P", "S"]
 while True:
     pick = random.choice(choices)
     print("\nRock Paper Scissors Shoot!")
-    player = input("Pick your weapon: [R]ock, [P]aper or [S]cissors\n")
+    player = raw_input("Pick your weapon: [R]ock, [P]aper or [S]cissors\n")
     if re.match("[nN]",player):
         break
     if not re.match("[rRpPsS]",player):
